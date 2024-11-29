@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0) 40%), url(images/bicicleta.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+header .logo {
+    /* background-color: rgba(4, 255, 155, 0.1); */
+    display: flex;
+    justify-content:left;/* alineacion horizontal */
+    align-items: end;/* alineacion vertical */
+    float: none; 
+    width: 500px;
+    padding: 30px 30px;
+    display: inline-block;
+}
+
+header .logo img {
+    background-color: rgba(0, 0, 0, 0.621);
+    width: 190px;
+    border-radius: 50%;
+    /* float: left; */
+    /* top: 100%;
+    left: 10%; */
+    /* padding: 10px;
+    display: inline-block; */
+
+}
+
+header .h1 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 70px;
+}
+
+.encabezado {
+    position: relative;
+    top: -40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* header h1 {
+    text-align: ;
+} */
+
+
+
+.encabezado nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.encabezado nav a:hover {
+    color: #f0a500;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;/
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+main .img,
+main .login {
+    width: 45%;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+
+.img img, .login img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .redes a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img img, 
+    .login img {
+        width: 100%;
+        height: 100%;
+    }
+}
